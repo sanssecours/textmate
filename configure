@@ -49,9 +49,9 @@ done
 
 test -L "${builddir}/include/sparsehash" || error "*** google sparsehash not installed."
 
-# ===========================================
-# = Check if non-system openssl is intalled =
-# ===========================================
+# ============================================
+# = Check if non-system openssl is installed =
+# ============================================
 
 if which -s brew && [[ -z "$libressl_prefix" && ! -d "${libressl_prefix}/include/openssl" ]]; then
 	libressl_prefix=$(brew --prefix libressl)
